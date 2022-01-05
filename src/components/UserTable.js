@@ -3,7 +3,7 @@ import React from 'react'
 export const UserTable = (props) => {
 
     const handleDeleteUser = id =>{
-        let answer = window.confirm("Вы уверены удалить пользователя?")
+        let answer = window.confirm("Вы уверены?")
         if (answer){
             props.deleteUser(id)
         }
@@ -25,8 +25,7 @@ export const UserTable = (props) => {
                 <td>{user.name}</td>
                 <td>{user.username}</td>
                 <td>
-                <button className="btn btn-info"
-                
+                <button className="btn btn-info"                
                   onClick={() => {
                     props.editRow(user)
                   }}

@@ -33,7 +33,7 @@ const EditUserForm = props => {
         value={user.username}
         onChange={handleInputChange}
       />
-      <button>Update user</button>
+      <button className="btn btn-warning">Update user</button>
       <button
         /* обновляем флаг editing, будет представлен в App позже */
         onClick={() => props.setEditing(false)}

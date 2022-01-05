@@ -10,7 +10,7 @@ export const AddUserForm = (props) => {
         const { name, value } = event.currentTarget
         setUser({ ...user, [name]: value })
     }
-    const handleSubmit = (...event) => {
+    const handleSubmit = (event) => {
         event.preventDefault()
         if (!user.name || !user.username) return
         props.addUser(user)//вызываем addUser и обнуляем форму
